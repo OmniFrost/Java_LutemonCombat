@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtLC"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="LUTEMON COMBAT"
+        android:textColor="#E40A0A"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBarracks"
+        android:layout_width="295dp"
+        android:layout_height="72dp"
+        android:background="#1AAEC8"
+        android:onClick="goToBarracks"
+        android:text="Lutemon barracks"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="234dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
+        app:srcCompat="@drawable/lutemon"
+        app:tint="#1475DC" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStats"
+        android:layout_width="295dp"
+        android:layout_height="72dp"
+        android:background="#1AC854"
+        android:onClick="goToStatistics"
+        android:text="Statistics"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTrain"
+        android:layout_width="295dp"
+        android:layout_height="72dp"
+        android:background="#CF7C44"
+        android:onClick="goToTraining"
+        android:text="Train Lutemons"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFight"
+        android:layout_width="329dp"
+        android:layout_height="82dp"
+        android:background="#F11D24"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="goToArena"
+        android:text="FIGHT!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

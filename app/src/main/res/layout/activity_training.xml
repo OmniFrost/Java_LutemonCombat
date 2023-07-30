@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <TextView
+      android:id="@+id/txtSelectFighters"
+      android:layout_width="381dp"
+      android:layout_height="72dp"
+      android:fontFamily="sans-serif-medium"
+      android:text="Select Lutemons to train:"
+      android:textSize="34sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.145"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.024" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvFighters"
+      android:layout_width="409dp"
+      android:layout_height="278dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.207" />
+
+  <TextView
+      android:id="@+id/txtTrainingIntensity"
+      android:layout_width="396dp"
+      android:layout_height="72dp"
+      android:fontFamily="sans-serif-medium"
+      android:text="Select training intensity"
+      android:textSize="34sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.133"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.564" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnConfirm"
+      android:layout_width="215dp"
+      android:layout_height="73dp"
+      android:background="#1AAEC8"
+      android:text="Train!"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.826"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.726" />
+
+  <RadioGroup
+      android:id="@+id/rgIntensity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.054"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.765">
+
+    <RadioButton
+        android:id="@+id/rbTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Light" />
+
+    <RadioButton
+        android:id="@+id/rbArena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium" />
+
+    <RadioButton
+        android:id="@+id/rbHeavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heavy" />
+  </RadioGroup>
+
+  <TextView
+      android:id="@+id/txtSuccess"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif-medium"
+      android:text="Training complete!"
+      android:textColor="#2B9100"
+      android:textSize="43sp"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.943" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
